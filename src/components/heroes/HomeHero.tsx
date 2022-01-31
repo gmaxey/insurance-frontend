@@ -20,7 +20,7 @@ const HomeHero = () => {
             <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               <span className="block text-white">Text was</span>
               <span className="block text-blue-200 font-semibold">
-                Updated
+                Updated again
               </span>
             </h1>
             <p className="mt-6 max-w-lg mx-auto text-center text-xl text-blue-200 sm:max-w-3xl">
