@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { flags, flagStore } from "../../lib/flags";
-import { event } from "../../lib/gtm";
+import {Link} from "react-router-dom";
+import {flags} from "../../lib/flags";
+import {event} from "../../lib/gtm";
+
 const HomeHero = () => {
   return (
     <div className="relative">
@@ -18,9 +19,9 @@ const HomeHero = () => {
           </div>
           <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block text-white">Text was</span>
+              <span className="block text-white">Insurance for you</span>
               <span className="block text-blue-200 font-semibold">
-                Updated again (again)
+                exactly as you like it
               </span>
             </h1>
             <p className="mt-6 max-w-lg mx-auto text-center text-xl text-blue-200 sm:max-w-3xl">
@@ -66,6 +67,10 @@ const HomeHero = () => {
                 </Link>
               </div>
             </div>
+              {flags.amazingNewFeature.isEnabled() &&
+                  // My amazing new feature
+                <AmazingFeatureButton/>
+              }
           </div>
         </div>
       </div>
@@ -74,3 +79,14 @@ const HomeHero = () => {
 };
 
 export default HomeHero;
+
+
+export const AmazingFeatureButton = () => {
+    return (
+        <div className="flex w-full items-center justify-center mt-4">
+        <button className="bg-yellow-500 py-3 px-16 text-white rounded-lg">
+            Amazing new feature!
+        </button>
+        </div>
+    )
+}
