@@ -2,6 +2,7 @@ import Rox from "rox-browser";
 
 export const flags = {
   contrastButtons: new Rox.Flag(),
+  amazingNewFeature: new Rox.Flag()
 };
 export const flagStore: {
   [key: string]: any;
