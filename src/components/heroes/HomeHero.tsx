@@ -67,10 +67,6 @@ const HomeHero = () => {
                 </Link>
               </div>
             </div>
-              {flags.amazingNewFeature.isEnabled() &&
-                  // My amazing new feature
-                <AmazingFeatureButton/>
-              }
           </div>
         </div>
       </div>
@@ -80,13 +76,3 @@ const HomeHero = () => {
 
 export default HomeHero;
 
-
-export const AmazingFeatureButton = () => {
-    return (
-        <div className="flex w-full items-center justify-center mt-4">
-        <button className="bg-yellow-500 py-3 px-16 text-white rounded-lg">
-            Amazing new feature!
-        </button>
-        </div>
-    )
-}
